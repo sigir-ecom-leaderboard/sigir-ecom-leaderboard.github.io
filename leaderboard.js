@@ -1,4 +1,4 @@
-$ajaxSetup({cache: true});
+$.ajaxSetup({cache: true});
 $.getJSON('score.json', function(data) {
 
   var homework = data;
@@ -94,6 +94,6 @@ function drawLeaderboard() {
 resort(3, 0);
 drawLeaderboard();
 
-$ajaxSetup({cache: false});
+$.ajaxSetup({cache: false});
 
 });
