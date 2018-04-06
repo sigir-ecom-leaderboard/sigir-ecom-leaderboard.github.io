@@ -1,3 +1,4 @@
+//owtjglwrtngrw
 $.ajaxSetup({cache: false});
 $.getJSON('score.json', function(data) {
 
