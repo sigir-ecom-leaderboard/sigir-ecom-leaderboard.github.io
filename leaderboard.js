@@ -1,5 +1,7 @@
+$ajaxSetup({cache: true});
 $.getJSON('score.json', function(data) {
-                  var homework = data;
+
+  var homework = data;
                 
 var d = new Date();
 var lastUpdated = d.toLocaleString();
@@ -91,5 +93,7 @@ function drawLeaderboard() {
 
 resort(3, 0);
 drawLeaderboard();
+
+$ajaxSetup({cache: false});
 
 });
