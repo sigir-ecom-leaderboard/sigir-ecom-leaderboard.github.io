@@ -1,8 +1,11 @@
-$.ajaxSetup({cache: false});
-$.getJSON('score.json', function(data) {
 
-  var homework = data;
-                
+// $.getJSON('score.json', function(data) {
+// var homework = data;
+
+fetch("https://sigir-ecom-leaderboard.github.io/score.json")
+  .then(res => res.json())
+  .then((homework) => {console.log(homework);//})
+
 var d = new Date();
 var lastUpdated = d.toLocaleString();
 var scoreDiv = document.getElementById("scorediv");
@@ -93,7 +96,5 @@ function drawLeaderboard() {
 
 resort(3, 0);
 drawLeaderboard();
-
-$.ajaxSetup({cache: false});
-
 });
+// });
