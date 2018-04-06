@@ -1,4 +1,4 @@
-$.ajaxSetup({cache: true});
+$.ajaxSetup({cache: false});
 $.getJSON('score.json', function(data) {
 
   var homework = data;
