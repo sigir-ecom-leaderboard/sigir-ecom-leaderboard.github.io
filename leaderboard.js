@@ -46,7 +46,8 @@ function resort(sortIndex, ascending) {
   });
 }
 
-updatedDiv.innerHTML = "last updated at " + lastUpdated;
+// updatedDiv.innerHTML = "last updated at " + lastUpdated;
+
 
 function drawLeaderboard() {
   while (scoreDiv.firstChild) {
