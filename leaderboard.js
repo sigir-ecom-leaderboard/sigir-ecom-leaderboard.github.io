@@ -47,6 +47,7 @@ function resort(sortIndex, ascending) {
 }
 
 // updatedDiv.innerHTML = "last updated at " + lastUpdated;
+updatedDiv.innerHTML = "The leaderboard will update every 15 mins."
 
 
 function drawLeaderboard() {
